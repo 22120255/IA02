@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    font-family: serif, sans-serif;
+    overflow-x: hidden; 
+}
+
+body {
+    background-image: url(../src/images/background.jpg);
+}
+
+.container {
+    max-width: 90%; 
+    margin: 15% 15% 10% 5%;
+    padding: 30px; 
+    overflow-x: hidden; 
+    background-color: #cdd3d0;
+    border-radius: 10px;
+    align-items: center;
+}
+
+input [type = "radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+input [type = "radio"]:checked::before {
+    background-color: #007bff;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+output.form-control {
+    display: block;
+    width: 100%; 
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+    min-height: 38px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  }
+#message {
+    color: #f10f07;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result {
+    color: #0e0e0e;
+}
+
+.title1 {
+       padding-left: 2px;
+       font-weight: bold;
+       font-size: large;
+}
+
+
+button {
+    width: 50%;
+    height: 80%;
+}
